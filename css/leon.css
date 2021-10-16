@@ -1,0 +1,250 @@
+/* Start variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding:60px;
+    --section-background: #f6f6f6;
+    --section-color:#777;
+}
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.parent {
+    background-color: #eee;
+}
+.container { 
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width:768px) {
+    .container {
+    width: 750px; 
+    }
+}
+/* medium */
+@media (min-width:992px) {
+    .container {
+    width: 970px; 
+    }
+}
+/* large */
+@media (min-width:1200px) {
+    .container {
+    width: 1170px; 
+    }
+}
+/* End globle */
+
+/* start header */
+.first-header {
+    width: 90%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+/* small */
+@media (max-width:468px) {
+    .first-header  {
+    transform: translate(30px, 0px);
+    -webkit-transform: translate(30px, 0px);
+    -moz-transform: translate(30px, 0px);
+    -ms-transform: translate(30px, 0px);
+    -o-transform: translate(30px, 0px);
+    margin-top: -40px;
+}
+}
+.first-header .links {
+    margin-top: 70px;
+    cursor: pointer;
+}
+@media (max-width:468px) {
+    .first-header .links  {
+    transform: translate(50px, 0px);
+    -webkit-transform: translate(50px, 0px);
+    -moz-transform: translate(50px, 0px);
+    -ms-transform: translate(50px, 0px);
+    -o-transform: translate(50px, 0px);
+}
+}
+.first-header .links .icons .fa-search {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.first-header .links .icons i {
+    margin-right: 10px;
+}
+.first-header .number {
+    margin-top: 50px;
+}
+@media (max-width:768px) {
+    .first-header .number  {
+    transform: translate(-30px, 0px);
+    -webkit-transform: translate(-30px, 0px);
+    -moz-transform: translate(-30px, 0px);
+    -ms-transform: translate(-30px, 0px);
+    -o-transform: translate(-30px, 0px);
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+}
+/* small */
+@media (max-width:568px) {
+    .first-header .logo-company img {
+    width: 200px; 
+        margin-top: 10px;
+    margin-bottom: 10px;
+    }
+}
+
+.second-header  {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.second-header span {
+    margin-right: 29px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* small */
+@media (max-width:768px) {
+    .second-header span{
+        display: block;
+    text-align: center;
+    margin-left: 50px;
+    }
+}
+.second-header span:hover {
+    background-color: rgb(175, 172, 172);
+    cursor: pointer;
+}
+    /*start Promotions*/ 
+    .Promotions {
+            background-color: whitesmoke;
+    }
+    .Promotions .Promotions-head {
+        margin-left: 8%;
+    }
+    
+    .Promotions .Promotions-head span {
+        font-size: 5px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .Promotions .Promotions-head .left {
+        padding-top: 10px;
+    }
+    .Promotions .Promotions-head .center {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .Promotions .Promotions-head .first-span {
+        color: #777;
+    }
+    .Promotions .images {
+        width: 90%;
+        margin-left: 8%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Promotions .images .image {
+        width: 300px;
+        margin-right: 85px;
+    }
+    .Promotions .images img {
+        width: 330px;
+    }
+     /* small */
+@media (max-width:768px) {
+    .Promotions .images img {
+    width: 300px;
+    }
+}
+    .Promotions .images .image h2 {
+        font-size: 17px;
+    }
+    .Promotions .images .image p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    /*end Promotions*/ 
+    /* Start Contact Section */
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #eeeeee;
+        padding-top: 50px;
+        height: 230px;
+    }
+         /* small */
+@media (max-width:768px) {
+    .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 480px;
+    }
+}
+    .contact .logo-again img {
+        width: 300px;
+    }
+    .contact .first-line {
+        margin-top: 20px;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    .contact .first-line span {
+        display: block;
+    }
+    .contact .second-line {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 13px;
+    }
+    .contact .second-line span {
+        display: block;
+    }
+    .contact .third-line {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 13px;
+    }
+    .contact .third-line span {
+        display: block;
+    }
+    .contact .third-line i {
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    /* end Contact Section */
+    /*start footer*/ 
+        .footer{
+        background-color: rgb(215 212 212);
+        padding: 15px 10px;
+        text-align: center;
+        font-size: 10px;
+        }
+        
+    /*End footer*/ 

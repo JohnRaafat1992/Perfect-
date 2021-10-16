@@ -59,7 +59,7 @@ body {
     margin-left: 35px;
 }
 /* small */
-@media (max-width:468px) {
+@media (max-width:768px) {
     .first-header  {
     transform: translate(30px, 0px);
     -webkit-transform: translate(30px, 0px);
@@ -73,7 +73,7 @@ body {
     margin-top: 70px;
     cursor: pointer;
 }
-@media (max-width:468px) {
+@media (max-width:768px) {
     .first-header .links  {
     transform: translate(50px, 0px);
     -webkit-transform: translate(50px, 0px);
@@ -107,11 +107,12 @@ body {
 }
 }
 /* small */
-@media (max-width:568px) {
+@media (max-width:468px) {
     .first-header .logo-company img {
-    width: 200px; 
-        margin-top: 10px;
+    width: 300px; 
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: -60px;
     }
 }
 
@@ -167,6 +168,8 @@ body {
         margin-left: 8%;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
     }
     .Promotions .images .image {
         width: 300px;
